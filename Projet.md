@@ -130,6 +130,11 @@ Les groupes sont les suivants:
 
 Les horaires de passage des groupes sont les suivants:
  
-- 
+- 14h15 => Projet_IT
+- 14h45 => 1
+- 15h15 => Groupe 4
+- 15h45 => La fraiche
+- 16h15 => Groupe 3
+- 16h45 => ArchiLog_DJM
 
 Pour ceux dont le groupe n'est pas dans la liste, contactez-moi très rapidement à vincent.leclerc@ynov.com
