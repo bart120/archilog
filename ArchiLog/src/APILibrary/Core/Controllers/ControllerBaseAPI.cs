@@ -32,9 +32,19 @@ namespace APILibrary.Core.Controllers
 
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [HttpGet]
-        public virtual async Task<ActionResult<IEnumerable<dynamic>>> GetAllAsync([FromQuery] string fields)
+        public virtual async Task<ActionResult<IEnumerable<dynamic>>> GetAllAsync([FromQuery] string fields, [FromQuery] string asc, [FromQuery] string range)
         {
             var query = _context.Set<TModel>().AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(asc))
+            {
+                query = query.OrderBy(x => x.ID);
+            }
+
+            if (!string.IsNullOrWhiteSpace(range))
+            {
+                query = query.Skip(10);
+            }
 
             if (!string.IsNullOrWhiteSpace(fields))
             {
@@ -44,10 +54,9 @@ namespace APILibrary.Core.Controllers
                 var results = await query.SelectDynamic(tab).ToListAsync();
 
                 return results.Select((x) => IQueryableExtensions.SelectObject(x, tab)).ToList();
-
             }
             else
-            {
+            {      
                 return Ok( ToJsonList(await query.ToListAsync()));
             }
 

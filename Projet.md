@@ -126,7 +126,7 @@ Les groupes sont les suivants:
 - "Groupe 3" : BIBI	Cylia, NGUIMATIEU Gladis Natacha, RAMANOELISON	Miradofitiavana
 - "Groupe 4" : BEN AICHA Chaima, GUIRIABOYE	Guillaume, MASNOUHOU Ayoub
 - "ArchilLog_DJM" : DO David, NDIAYE Mamadou, TWISHIME Jean-Luc
-- "Groupe 6" : DIALLO Ismaila, TEGUIA Polla Joël
+- "Projet_IT" : DIALLO Ismaila, TEGUIA Polla Joël, THIAM Babacar
 
 Les horaires de passage des groupes sont les suivants:
  
